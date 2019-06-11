@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  background-color: #F8F8F6;
+}
+
+img {
+  width: 350px;
+  height: 200px;
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 35px;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+}
+
+span {
+  font-weight: 600;
+}
+
+.inputSection {
+  margin: 50px 0px 80px 0px;
+  width: 400px;
+}
+
+.inputs {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-top: 1px;
+  width: 100px;
+}
+
+.addOption {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #8AB439;
+  border: none;
+  color: white;
+  padding: 3px 20px;
+  text-align: center;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.button:hover {
+  background-color: green;
+}
+
+.button:active {
+  background-color: #8AB439;
+}
+
+h1, button {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
