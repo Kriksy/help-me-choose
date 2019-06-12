@@ -3,7 +3,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 30px;
   background-color: #F8F8F6;
 }
 
@@ -24,7 +24,7 @@ span {
 }
 
 .inputSection {
-  margin: 50px 0px 80px 0px;
+  margin: 20px 0px 3px 0px;
   width: 400px;
 }
 
@@ -44,10 +44,9 @@ input {
 }
 
 button {
-  background-color: #8AB439;
   border: none;
   color: white;
-  padding: 3px 20px;
+  padding: 3px 25px;
   text-align: center;
   font-size: 22px;
   cursor: pointer;
@@ -57,7 +56,7 @@ button {
 
 input {
   width: 100%;
-  padding: 12px 20px;
+  padding: 12px 25px;
   margin: 8px 0;
   box-sizing: border-box;
   border: 3px solid #ccc;
@@ -66,12 +65,34 @@ input {
   outline: none;
 }
 
-.button:hover {
-  background-color: green;
+.addButton {
+  width: 100px;
+  height: 100px;
+  background: url("images/addButton.png") no-repeat;
+  display: inline-block;
 }
 
-.button:active {
-  background-color: #8AB439;
+.addButton:hover {
+  background: url("images/addButtonHover.png") no-repeat;
+}
+
+.addButton:active {
+  background: url("images/addButtonActive.png") no-repeat;
+}
+
+.goButton {
+  width: 100px;
+  height: 100px;
+  background: url("images/goButton.png") no-repeat;
+  display: inline-block;
+}
+
+.goButton:hover {
+  background: url("images/goButtonHover.png") no-repeat;
+}
+
+.goButton:active {
+  background: url("images/goButtonActive.png") no-repeat;
 }
 
 h1, button {
