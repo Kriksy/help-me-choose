@@ -45,7 +45,7 @@ $(function() {
     console.log(winner)
     $('.resultSection').text(winner)
     // ersätt innehållet i html-taggen med class div '.titel'
-    $('.titel').replaceWith('<h1>The <span style="color:#8AB439"> cat</span>´s choice is... </h1>');
+    $('.titel').replaceWith('<h1>The <span style="color:#8AB439"> cat</span> chose... </h1>');
   }
 
   // alla events listeneres
