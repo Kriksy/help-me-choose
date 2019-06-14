@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang=en>
-  <head>
-    <meta charset="utf-8">
-    <title>Help me choose</title>
-    <link href="./main.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <img src="./images/1b.jpg" alt="green.cat.bild" />
-    <h1><span style="color:#8AB439"> Help </span> me choose between... </h1>
-    <div class="inputSection">
-      <div class="inputs">
-        <input type="text" placeholder="Something"/>
-      </div>
-      <button class="button addOption addButton">Add</button>
-    </div>
-    <div class="resultSection"></div>
-    <button class="button goButton">Go!</button>
 
-      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script>
-        $(function() {
-          $('.resultSection').hide()
-          var add_option = function() {
-            $('.inputs').append('<input></input>')
-          }
-          $('.addOption').click(add_option)
-        })
-      </script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Help me choose HelpCat</title>
+  <link href="./main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <!-- Stor katt -->
+  <img src="./images/greenCat.jpg" alt="green.cat.bild" class="greenCat" />
+  <div class="titel">
+    <h1><span style="color:#8AB439"> Help </span> me choose between... </h1>
+  </div>
+  <!-- Textbox -->
+  <div class="inputSection">
+    <div class="inputs">
+      <input type="text" class="firstInput" id="input-0" placeholder="Something" />
+    </div>
+    <button class="button addOption addButton">Add</button>
+  </div>
+  <!-- Resultat -->
+  <div class="resultSection"></div>
+  <button class="button goButton submit">Go!</button>
+  <!-- Katt i hörnet -->
+  <a href="https://github.com/Kriksy">
+    <img src="./images/bottomCat.png" class="bottomCat" alt="bottomCat.png" />
+  </a>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="./main.js">
+  </script>
+</body>
+
 </html>

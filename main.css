@@ -5,9 +5,10 @@ body {
   align-items: center;
   margin-top: 30px;
   background-color: #F8F8F6;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-img {
+.greenCat {
   width: 350px;
   height: 200px;
 }
@@ -97,4 +98,27 @@ input {
 
 h1, button {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.bottomCat {
+  background: url("images/bottomCat.png") no-repeat;
+  width: 100px;
+  height: 80px;
+  display: inline-block;
+  flex-direction: column-reverse;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.bottomCat:hover{
+  content: url("images/bottomCatActive.png");
+}
+
+.resultSection {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
 }
