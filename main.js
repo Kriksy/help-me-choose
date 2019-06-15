@@ -1,12 +1,16 @@
 $(function() {
   $('.resultSection').hide()
+
+  // https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
   window.onload = (event) => {
     $('#input-0').focus();
   };
 
   // Add Button
   let antalInputs = 0;
-  let addOption = function() {      // hämta värdet från html-taggen med id #input-SIFFRA
+  let addOption = function() {
+    // https://api.jquery.com/id-selector/
+    // hämta värdet från html-taggen med id #input-SIFFRA
     let inputValue = $('#input-' + antalInputs).val();
 
     // vi kollar längden på input värdet med en if-sats
@@ -52,5 +56,4 @@ $(function() {
   $('.addButton').click(addOption);
   $('.submit').click(onSubmit)
   $('.inputs').keypress(onInputEnter);
-
 })
